@@ -21,6 +21,4 @@ Wyróżniamy kilka typów sąsiedztwa:
 ## Zadania
 ![](https://i.imgur.com/Cc8GfHn.png)
 
-## Zadania
-
 #psio #it 
