@@ -181,18 +181,122 @@ Mogą się powtarzać z zadaniami które były w osobnych działach (na pewno si
 > ![](https://i.imgur.com/MBrREgX.png)
 
 ![](https://i.imgur.com/N8msBno.png)
+
+> [!example]- Moja odpowiedź
+> Dane obiekty można od siebie odróżnić wykorzystując nawet tylko liczbę eulera, która dla każdego obiektu jest inna, kolejno: $1, -1, -3$
+
 ![](https://i.imgur.com/VdJI5zQ.png)
+
+> [!example]- Moja odpowiedź
+> ![](https://i.imgur.com/15ycGsD.png)
+
 ![](https://i.imgur.com/rFpdNsU.png)
+
+> [!example]- Moja odpowiedź
+> Krawędź w obrazie cyfrowym jest nagłą zmianą koloru, w kontekście obrazów czarno białych jest to nagła różnica jasności.
+> Rysunki są słabej jakości ale wydaje mi się że na pierwszym rysunku skorzystano z [[Detekcja krawędzi#Maski Sobela|maski Sobela]], natomiast na drugim jest to albo [[Detekcja krawędzi#Laplasjan filtru Gaussa|LoG]] albo [[Detekcja krawędzi#Metoda Canny|metoda Canny]] (ale niewiele niestety widać)
+
 ![](https://i.imgur.com/mDRDi5k.png)
+
+> [!example]- Moja odpowiedź
+>
+> 1. [[Operacje morfologiczne#Otwarcie|Otwarcie]] - jest to w kolejności: operacja erozji i operacja dylacji. Zastosowaniem może być usunięcie niepotrzebnego szumu ze zdjęcia binarnego
+> 2. [[Operacje morfologiczne#Zamykanie (wypełnianie)|Zamykanie]] - polega na wypełnieniu dziur w danych obiektach. Nie jest to zamknięcie ponieważ w efekcie zamknięcia obiekty uległyby lekkim zmianom kształtu. Zastosowaniem może być np. chęć obliczenia pola powierzchni danej figury, gdzie interesuje nas pole zaznaczone przez krawędzie.
+> 3. [[Operacje morfologiczne#Erozja]] - polega na "skurczeniu" obiektów poprzez usuwaniu ich krawędzi (tych pikseli które graniczą z choć jednym czarnym pikselem). Przydaje się chociażby przy zliczaniu etykiet połączonych komponentów
+
 ![](https://i.imgur.com/lKY68u7.png)
+
+> [!example]- Moja odpowiedź
+>
+> 1. [[Segmentacje#Mean-shift|Mean shift]] - mean-shift charakteryzuje się łączeniem tych pikseli w grupę, które spełniają pewne warunki podobieństwa (np. jasności jak tutaj). Następnie cały komponent przyjmuje jedną barwę.
+> 2. [[Segmentacje#Metoda błądzenia losowego|Metoda błądzenia losowego, random walker]] - random walker dobrze sprawdzi się w tym wypadku ponieważ jest on odporny na słabe krawędzie i dziury, które są widoczne chociażby przy brzuchu pingwina.
+> 3. W tym wypadku można by zastosować raczej [[Segmentacje#Progowanie adaptacyjne|progowanie adaptacyjne]], które wyróżni dane przerwy między tymi plastrami/komórkami czy co to jest. Na początku myślałem że [[Segmentacje#Metoda działów wodnych|metoda działów wodnych]] będzie tu odpowiednia, ale ona dzieli barwy globalnie, a widać dobrze że górna część obrazu jest zdecydowanie jaśniejsza niż prawa dolna.
+
 ![](https://i.imgur.com/HtyuxKS.png)
+
+> [!example]- Moja odpowiedź
+>
+> 1. [[Segmentacje#Metoda min przekroju / max przepływu|Metoda min przekroju / max przepływu]] - zaznaczamy obie komórki, reszte traktujemy jako tło
+> 2. To nie jest [[Segmentacje#Algorytm Felzenszwalba i Huttenlochera (FiH)|algorytm felzenszwalba i huttenlochera]]? Tylko że pomalowany na czarno biało? Nic innego mi tu nie pasuje, ani progowanie wielopoziomowe, ani metoda działów wodnych, nic. Te podziały są zbyt randomowe, jabłka tego samego koloru są tutaj kolorowane na różne barwy.
+> 3. [[Segmentacje#Model typu balon]] - w sumie są dobrze widoczne krawędzie więc czemu nie
+> 4. Albo [[Segmentacje#Model typu wąż|model typu wąż]] zaznaczając kółko dookoła, albo [[Segmentacje#Metoda błądzenia losowego|random walker]], tylko obawiam się że ten random walker może pójść wzdłuż nie tej krawędzi.
+
 ![](https://i.imgur.com/Pxu0ali.png)
+
+> [!example]- Moja odpowiedź
+>
+> 1. Oryginał
+> 2. [[Operacje morfologiczne#Erozja|Erozja]] - litery są cieńsze, zniknęły cienkie kreski
+> 3. [[Operacje morfologiczne#Gradient morfologiczny|Gradinet morfologiczny]] - widać, że krechy są grube i zaprezentowany przez nich kontur jest napuchnięty względem oryginalnego obrazu, co jest dowodem na to że musiała być tam użyta dylacja.
+> 4. [[Operacje morfologiczne#Zamknięcie|Zamknięcie]] - Tekst widać że się zamknął między E a X, natomiast jego grubość nie uległa zmianie.
+
 ![](https://i.imgur.com/fOw7olJ.png)
+
+> [!example]- Moja odpowiedź
+>
+> 1. Oryginał
+> 2. [[Operacje morfologiczne#Otwarcie|Otwarcie]] - widać że zniknęły cienkie kreski, które są częścią erozji przy otwarciu, a same litery nie "schudły".
+> 3. [[Operacje morfologiczne#Dylacja|Dylacja]] - litery się po prostu pogrubiły
+> 4. [[Operacje morfologiczne#Transformata odległościowa|Transformata odległościowa]] - Widać liniową różnicę która powstała pomiędzy krawędziami a zawartością liter.
+
 ![](https://i.imgur.com/1J9U5qr.png)
+
+> [!example]- Moja odpowiedź
+> By oddzielić podkładki należy najpierw zbinaryzować obraz, możemy użyć zwykłego progowania z uwagi na bardzo jasne tło. Następnie etykietujemy połączone komponenty. Połączone komponenty kolejno analizujemy badając liczbę eulera, która jedynie dla podkładek wynosi 0.
+
 ![](https://i.imgur.com/A3Ui85c.png)
+
+> [!example]- Moja odpowiedź
+> Dla obrazów 2D wyróżniamy:
+>
+> - 4 sąsiedztwo (jedynie piksele o wspólnym boku traktujemy jako sąsiadujące)
+>   - Dla 4 sąsiedztwa na obrazie jest 6 obiektów
+> - 8 sąsiedztwo (piksele również o wspólnym rogu traktujemy jako sąsiadujące)
+>   - Dla 8 sąsiedztwa na obrazie są 3 obiekty
+
 ![](https://i.imgur.com/B7ajlNk.png)
+
+> [!example]- Moja odpowiedź
+> Wspólne:
+>
+> - Kurtoza
+> - Skośność
+> - Odchylenie standardowe
+
 ![](https://i.imgur.com/cyDx1XE.png)
+
+> [!example]- Moja odpowiedź
+>
+> 1. [[Segmentacje#Mean-shift|Mean-shift]] - widać, że obraz był dzielony wedle kolorów pikseli, co przyczyniło się do podziału obrazu na kilka grup o jednym wspólnym kolorze, co jest charakterystyczne dla tej metody
+> 2. [[Segmentacje#Algorytm Felzenszwalba i Huttenlochera|Algorytm Felzenszwalba i Huttenlochera]], charakterystyczny rozpierdol kolorów, żadne ugrupowania dla tych samych barw
+> 3. [[Segmentacje#Metoda błądzenia losowego|Random walker]], wydaje mi się że random walker ze względu na odporność algorytmu na zanikającą ścieżkę widoczną PRZY 4 ODNÓŻU ROZGWIAZDY LICZĄC WDŁUŻ WSKAZÓWEK ZEGARA I UZNAJĄC ODNÓŻE NA GODZINIE DWUNASTEJ JAKO PIERWSZE ODNÓŻE.
+> 4. [[Segmentacje#Progowanie adaptacyjne|Progowanie adaptacyjne]] - Wyróżnienie tekstu spośród tła, mimo zmiany jasności obrazu w poszczególnych częściach (np. przy zgięciu strony).
+
 ![](https://i.imgur.com/rHhOHZs.png)
+
+> [!example]- Moja odpowiedź
+>
+> 1. Oryginalny
+> 2. [[Operacje morfologiczne#Pocienianie|Pocienianie]], czemu nie szkielet? Bo kropka nad i byłaby okręgiem a nie kropeczką. W tym przypadku tracona jest jej topologia.
+> 3. [[Operacje morfologiczne#Black top-hat|Black top-hat]], widać, że jest to różnica która powstaje w wyniku zamknięcia.
+> 4. [[Operacje morfologiczne#Gradient morfologiczny|Gradient morfologiczny]] - widać, że krechy są grube i zaprezentowany przez nie kontur jest napuchnięty względem oryginalnego obrazu
+
 ![](https://i.imgur.com/xxOnG71.png)
-![](https://i.imgur.com/c40JNU5.png)
+
+> [!example]- Moja odpowiedź
+>
+> 1. Oryginał
+> 2. Wydaje mi się że użyto [[Filtracje#Filtracja medianowa|filtracji medianowej]], która bardzo dobrze radzi sobie z szumem sól i pieprz. Dokonuje ona zamiany danego piksela na piksel środkowy wybrany spośród pikseli zaznaczonych razem z nim przez wybrany SE (ELEMENT STRUKTURYZUJĄCY)
+> 3. [[Filtracje#Filtr Gaussa|Filtr Gaussa]], inaczej rozmycie, polega na zastosowaniu odpowiedniej maski
+
 ![](https://i.imgur.com/Fhbxdxu.png)
+
+> [!example]- Moja odpowiedź
+> Założenia:
+>
+> - Piksele są indeksowane wzdłuż wskazówek zegara poczynając od godziny 12
+> - Wartości mniejsze od wartości piksela w środku są oznaczane przez 1
+>   Zatem wartości: $11001010$
+>   Więc: $LBP=2^{0}+2^{1}+2^{4}+2^{6}=1+2+16+64=83$
+
+#psio #it
