@@ -297,6 +297,6 @@ Mogą się powtarzać z zadaniami które były w osobnych działach (na pewno si
 > - Piksele są indeksowane wzdłuż wskazówek zegara poczynając od godziny 12
 > - Wartości mniejsze od wartości piksela w środku są oznaczane przez 1
 >   Zatem wartości: $11001010$
->   Więc: $LBP=2^{0}+2^{1}+2^{4}+2^{6}=1+2+16+64=83$
+>   Więc: $LBP=2^{1}+2^{3}+2^{6}+2^{7}=2+8+64+128=202$
 
 #psio #it
