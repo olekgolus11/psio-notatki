@@ -1,4 +1,5 @@
 # Powtórka do egzaminu
+
 - [[Filtracje]]
 - [[Normalizacja jasności]]
 - [[Local binary patterns]]
@@ -7,6 +8,7 @@
 - [[Segmentacje]]
 - [[Operacje morfologiczne]]
 - [[Detekcja krawędzi]]
+- [[Sygnały]]
 - [[Zadania typu różne]]
 
-#psio #it 
+#psio #it
