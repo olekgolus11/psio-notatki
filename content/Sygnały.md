@@ -6,6 +6,7 @@
   - [[#Zadanie z bazą dyskretnej informacji]]
   - [[#Zadanie z wektorem N elementów]]
   - [[#Zadanie z jakimiś próbkami]]
+  - [[#Zadanie z obliczaniem pliku dźwiękowego]]
 
 ## Jak sygnał jest przetwarzany?
 
