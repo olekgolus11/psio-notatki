@@ -112,9 +112,19 @@ Chyba będzie jedna z tych dwóch opcji, nie mam niestety jak tego zweryfikować
 
 Po kolei:
 
-1. łatwizna jak ktoś pamięta jak obliczyć sinusy, nie będę tego tłumaczył
+1. Liczycie sinusy, czyli dla każdego $x_{i}$ podstawiacie $i$ do wzoru, Wyjdą wam 4 wyniki. Darmowe punkty.
 2. Nasz sygnał ma częstotliwość taką, która odpowiada pełnemu cyklowi w ciągu 8 próbek, a ponieważ mamy do dyspozycji tylko 4 próbki, to sygnał wykonuje pół cyklu w oknie analizy. W tym wypadku najlepiej przyjąć taki komponent DFT, który wykona pełny cykl w ciągu tych 4 próbek, będzie to ten dla którego $k=1$ (bo $\frac{2\pi}{8}+\frac{\pi}{4}$ to $\frac{2\pi}{4}$)
 
 A to dodatkowe to z pizdy wyjęte
+
+### Zadanie z obliczaniem pliku dźwiękowego
+
+> [!cite]+ Zad 3
+> Częstotliwość próbkowania wynosi 8kHz, zapis 10s, a 1 próbka = 1 bajt.
+> Jaki jest najmniejszy możliwy rozmiar pliku jeżeli nagłówek ma 800B?
+
+W sumie wszystko mnożymy i dodajemy rozmiar nagłówka, essa?
+
+![](https://i.imgur.com/5N1o4aD.png)
 
 #psio #it
