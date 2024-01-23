@@ -90,19 +90,19 @@ Mogą się powtarzać z zadaniami które były w osobnych działach (na pewno si
 
 > [!example]- Moja odpowiedź
 >
-> 1. [[Segmentacje#Progowanie adaptacyjne]]
-> 2. [[Segmentacje#Progowanie]]
-> 3. [[Segmentacje#Metoda min przekroju / max przepływu]]
-> 4. [[Segmentacje#Progowanie adaptacyjne]]
-> 5. [[Segmentacje#Algorytm Felzenszwalba i Huttenlochera (FiH)]]
+> 1. [[Segmentacje#Progowanie adaptacyjne|Progowanie adaptacyjne]]
+> 2. [[Segmentacje#Progowanie|Progowanie]]
+> 3. [[Segmentacje#Metoda min przekroju / max przepływu|Metoda min przekroju, max przepływu]]
+> 4. [[Segmentacje#Progowanie adaptacyjne|Progowanie adaptacyjne]]
+> 5. [[Segmentacje#Algorytm Felzenszwalba i Huttenlochera (FiH)|Algorytm Felzenszwalba i Huttenlochera (FiH)]]
 
 ![](https://i.imgur.com/gMXOfFo.png)
 
 > [!example]- Moja odpowiedź
 >
-> 1. [[Operacje morfologiczne#White top-hat]] - Obrazuje różnicę, która powstaje w wyniku otwarcia - może się przydać kiedy chcemy usunąć księżyc z gwieździstego nieba xD
-> 2. [[Operacje morfologiczne#Zamykanie (wypełnianie)]] - Wypełnia obraz wzdłuż konkretnych krawędzi - może się przydać jak chcemy zrobić zdjęcie pizzy i usunąć składniki xD
-> 3. [[Operacje morfologiczne#Black top-hat]] - obrazuje różnicę, która powstaje w wyniku zamknięcia - może się przydać kiedy chcemy zostawić oko z illuminati 😀
+> 1. [[Operacje morfologiczne#White top-hat|White top-hat]] - Obrazuje różnicę, która powstaje w wyniku otwarcia - może się przydać kiedy chcemy usunąć księżyc z gwieździstego nieba xD
+> 2. [[Operacje morfologiczne#Zamykanie (wypełnianie)|Zamykanie (wypełnianie)]] - Wypełnia obraz wzdłuż konkretnych krawędzi - może się przydać jak chcemy zrobić zdjęcie pizzy i usunąć składniki xD
+> 3. [[Operacje morfologiczne#Black top-hat|Black top-hat]] - obrazuje różnicę, która powstaje w wyniku zamknięcia - może się przydać kiedy chcemy zostawić oko z illuminati 😀
 
 ![](https://i.imgur.com/1FhNVAL.png)
 
@@ -132,19 +132,19 @@ Mogą się powtarzać z zadaniami które były w osobnych działach (na pewno si
 
 > [!example]- Moja odpowiedź
 >
-> 1. [[Segmentacje#Progowanie adaptacyjne]]
-> 2. [[Segmentacje#Rozrost obszaru]]
-> 3. [[Segmentacje#Model typu balon]]
-> 4. [[Segmentacje#Metoda działów wodnych]] + markery
-> 5. [[Segmentacje#Algorytm Felzenszwalba i Huttenlochera (FiH)]]
+> 1. [[Segmentacje#Progowanie adaptacyjne|Progowanie adaptacyjne]]
+> 2. [[Segmentacje#Rozrost obszaru|Rozrost obszaru]]
+> 3. [[Segmentacje#Model typu balon|Model typu balon]]
+> 4. [[Segmentacje#Metoda działów wodnych|Metoda działów wodnych]] + markery
+> 5. [[Segmentacje#Algorytm Felzenszwalba i Huttenlochera (FiH)|Algorytm Felzenszwalba i Huttenlochera (FiH)]]
 
 ![](https://i.imgur.com/c8A7B4e.png)
 
 > [!example]- Moja odpowiedź
 >
-> 1. [[Operacje morfologiczne#Zamknięcie]]
-> 2. Chujoza garbata
-> 3. [[Operacje morfologiczne#Szkielet]]
+> 1. [[Operacje morfologiczne#Zamknięcie|Zamknięcie]]
+> 2. [[Operacje morfologiczne#White top-hat|White top-hat]] chociaż jest to dziwny przypadek
+> 3. [[Operacje morfologiczne#Szkielet|Szkielet]]
 
 ![](https://i.imgur.com/z2K6Loj.png)
 
@@ -169,11 +169,11 @@ Mogą się powtarzać z zadaniami które były w osobnych działach (na pewno si
 
 > [!example]- Moja odpowiedź
 >
-> 1. [[Segmentacje#Algorytm Felzenszwalba i Huttenlochera (FiH)]]
+> 1. [[Segmentacje#Algorytm Felzenszwalba i Huttenlochera (FiH)|Algorytm Felzenszwalba i Huttenlochera (FiH)]]
 > 2. [[Segmentacje#Klasteryzacja|Klasteryzacja na podstawie cech teksturalnych]]
 > 3. [[Segmentacje#Metoda działów wodnych|Metoda działów wodnych z markerami]]
-> 4. [[Segmentacje#Model typu balon]]
-> 5. [[Segmentacje#Progowanie adaptacyjne]]
+> 4. [[Segmentacje#Model typu balon|Model typu balon]]
+> 5. [[Segmentacje#Progowanie adaptacyjne|Progowanie adaptacyjne]]
 
 ![](https://i.imgur.com/plGr5mV.png)
 
